@@ -1,3 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid greenyellow;
+}
+
 a {
     color: inherit;
     text-decoration: none;
@@ -27,13 +34,14 @@ body {
 .left .logo-prominent {
     position: absolute;
     top: 20%;
-    font-size: 4vw;
+    font-size: 3rem;
     background-color: rgb(0, 0, 0, 0.5);
     padding: 0.5em 0 0.5em 0;
 
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 2vw;
@@ -42,6 +50,7 @@ body {
 .logo-prominent img {
     filter: invert(100%);
     height: 7vw;
+    min-height: 70px;
     }
 
 .logo-prominent :is(img, p) {
@@ -51,7 +60,7 @@ body {
 .left .photo-attribution {
     position: absolute;
     bottom: 0;
-    font-size: 1.125vw;
+    font-size: 0.875rem;
 }
 
 .left :is(.logo-prominent, .photo-attribution) {
@@ -64,4 +73,30 @@ body {
     width: 60%;
     height: 100vh;
     float: right;
+    box-sizing: border-box;
+    line-height: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    list-style: none;
+}
+
+ul li {
+    width: calc(50% - 20px);
+    padding: 10px;
+    margin: 10px;
+    box-sizing: border-box;
+    min-width: fit-content;
+    display: flex;
+    flex-direction: column;
+  }
+
+li label {
+    font-variant: small-caps;
 }
