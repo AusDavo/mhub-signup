@@ -14,6 +14,7 @@ body {
 .left {
     width: 40%;
     height:100vh;
+    float: left;
     
     background-image: url(./img/greg-rosenke-cq2_Wg8Ebd4-unsplash.jpg);
     background-repeat: no-repeat;
@@ -21,7 +22,6 @@ body {
     background-position: center;
 
     position: relative;
-
 }
 
 .left .logo-prominent {
@@ -58,4 +58,10 @@ body {
     color: white;
     text-align: center;
     width: 100%;
+}
+
+.right {
+    width: 60%;
+    height: 100vh;
+    float: right;
 }
