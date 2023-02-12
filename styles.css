@@ -19,15 +19,17 @@
   .left {
     width: 40%;
     height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
     float: left;
     background: url(./img/greg-rosenke-cq2_Wg8Ebd4-unsplash.jpg) no-repeat center / cover;
-    position: relative;
   }
   
-  .left .logo-prominent {
+.logo-prominent {
     position: absolute;
     top: 20%;
-    font-size: 3rem;
+    font-size: 7vw;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 0.5em;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -44,7 +46,7 @@
   .logo-prominent img {
     filter: invert(100%);
     height: 7vw;
-    min-height: 70px;
+    min-height: 50px;
     margin: 0;
   }
   
@@ -59,32 +61,35 @@
   
   .right {
     width: 60%;
-    height: 100vh;
-    float: right;
-    box-sizing: border-box;
+    position: absolute;
+    right: 0;
+    top: 0;
+    overflow: scroll;
+    margin-top: 10vw;
+
+    /* box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center; */
   }
 
   .encourage {
-    margin-left: 20px;
-    font-size: 1.3rem;
+    margin: 20px;
+    font-size: 1.2rem;
     margin-bottom: 4%;
     max-width: 50ch;
     font-weight: 600;
   }
 
   ul {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
   
-  ul li {
+  li {
     width: calc(45% - 60px);
     box-sizing: border-box;
     display: flex;
@@ -97,12 +102,13 @@
     font-variant: small-caps;
   }
   
-  input {
+  input { 
     background-color: #FFf9fafb;
     border: 1px solid #E5E7EB;
     border-radius: 5px;
     font-size: 14px;
     width: 100%;
+    max-width: 30ch;
     padding: 5px;
     margin-bottom: 1%;
   }
@@ -117,7 +123,8 @@
     border-color: red;
   }
 
-  .action {
+  .form-container {
+    width: 100%;
     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
     padding: 20px;
   }
@@ -125,3 +132,35 @@
   .action p {
     padding-bottom: 3%;
   }
+
+  button {
+    margin: 20px;
+
+    font-size: 16px;
+    font-weight: bold;
+  
+    color: #FFFFFF;
+    background-color: #5995DA;
+  
+    border: none;
+    border-radius: 3px;
+  
+    padding: 10px 40px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #76AEED;
+  }
+  
+  button:active {
+    background-color: #407FC7;
+  }
+
+.login-invitation {
+  margin-left: 20px;
+}
+
+.login-invitation a {
+  color: #5995DA;
+}
