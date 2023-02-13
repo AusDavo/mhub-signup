@@ -119,7 +119,7 @@
     box-shadow: 6px 3px 3px gray;
   }
   
-  input:invalid {
+  input:invalid:not(:placeholder-shown) {
     border-color: red;
   }
 
@@ -163,4 +163,54 @@
 
 .login-invitation a {
   color: #5995DA;
+}
+
+@-webkit-keyframes silo-help {
+  0% {
+      opacity: 0;
+  }
+  4% {
+      opacity: 0;
+  }
+  5% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+@-moz-keyframes silo-help {
+  0% {
+      opacity: 0;
+  }
+  4% {
+      opacity: 0;
+  }
+  5% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+@keyframes silo-help {
+  0% {
+      opacity: 0;
+  }
+  4% {
+      opacity: 0;
+  }
+  5% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+input:focus:invalid:not(:placeholder-shown) + span:after {
+  text-transform: lowercase;
+  font-variant: small-caps;
+  content: " (" attr(data-help) ")";
+  animation: silo-help 100s;
 }

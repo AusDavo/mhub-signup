@@ -31,27 +31,33 @@
                     <ul>
                         <li>
                             <label for="first-name">first name</label>
-                            <input type="text" id="first-name" name="first-name">
+                            <input type="text" id="first-name" name="first-name" placeholder="Name *" value="" pattern="^[^0-9]+$" maxlength="245" required>
+                            <span data-help="¿Are you 11 from Stranger Things?"></span>
                         </li>
                         <li>
-                            <label for="last-name">last name</label>
-                            <input type="text" id="last-name" name="last-name">
+                            <label for="last-name" >last name</label>
+                            <input type="text" id="last-name" name="last-name" placeholder="Surname *" value="" pattern="^[^0-9]+$" maxlength="245" required>
+                            <span data-help="A girl has no name- Arya Stark"></span>
                         </li>
                         <li>
                             <label for="email">email</label>
-                            <input type="email" id="email" name="email">
+                            <input type="email" id="email" name="email" placeholder="Email *" value="" maxlength="100" required>
+                            <span data-help="Format email@email.com"></span>
                         </li>
                         <li>
                             <label for="phone-number">phone number</label>
-                            <input type="tel" id="phone-number" name="phone-number">
+                            <input type="tel" id="phone-number" name="phone-number" placeholder="Phone number" value="" pattern="\d{10,20}" maxlength="20">
+                            <span data-help="Just digits, 10 or more please"></span>
                         </li>
                         <li>
                             <label for="password">password</label>
                             <input type="password" id="password" name="password" required>
+                            <span data-help="At least 8 characters"></span>
                         </li>
                         <li>
                             <label for="password-conf">confirm password</label>
                             <input type="text" id="password-conf" name="password-conf" required>
+                            <span data-help="Check again to ensure a match"></span>
                         </li>
                     </ul>
                 </div>
