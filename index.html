@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <title>MHub Signup</title>
 </head>
 <body>
@@ -52,13 +52,13 @@
                         </li>
                         <li>
                             <label for="password">password</label>
-                            <input type="password" id="password" name="password" required>
+                            <input type="password" id="password" name="password" rplaceholder="" value="" minlength="8" maxlength="32" equired>
                             <span data-help="At least 8 characters"></span>
                         </li>
                         <li>
                             <label for="password-conf">confirm password</label>
-                            <input type="text" id="password-conf" name="password-conf" required>
-                            <span data-help="Check again to ensure a match"></span>
+                            <input type="text" id="password-conf" name="password-conf" placeholder="" value="" minlength="8" maxlength="32" required>
+                            <span data-help="Ensure that these match and contain at least 8 characters"></span>
                         </li>
                     </ul>
                 </div>
